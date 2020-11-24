@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.accenture.training.controller.ProductsControllerTest" time="22.589" tests="5" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\rita.a.fernandes\Desktop\trainingNov2020\target\test-classes;C:\Users\rita.a.fernandes\Desktop\trainingNov2020\target\classes;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.3.5.RELEASE\spring-boot-starter-web-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter\2.3.5.RELEASE\spring-boot-starter-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot\2.3.5.RELEASE\spring-boot-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.3.5.RELEASE\spring-boot-autoconfigure-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.3.5.RELEASE\spring-boot-starter-logging-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\rita.a.fernandes\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\rita.a.fernandes\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\rita.a.fernandes\.m2\repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.3.5.RELEASE\spring-boot-starter-json-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.3\jackson-databind-2.11.3.jar;C:\Users\rita.a.fernandes\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.3\jackson-annotations-2.11.3.jar;C:\Users\rita.a.fernandes\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.3\jackson-core-2.11.3.jar;C:\Users\rita.a.fernandes\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.3\jackson-datatype-jdk8-2.11.3.jar;C:\Users\rita.a.fernandes\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.3\jackson-datatype-jsr310-2.11.3.jar;C:\Users\rita.a.fernandes\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.3\jackson-module-parameter-names-2.11.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.3.5.RELEASE\spring-boot-starter-tomcat-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.39\tomcat-embed-core-9.0.39.jar;C:\Users\rita.a.fernandes\.m2\repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.39\tomcat-embed-websocket-9.0.39.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-web\5.2.10.RELEASE\spring-web-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-beans\5.2.10.RELEASE\spring-beans-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-webmvc\5.2.10.RELEASE\spring-webmvc-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-aop\5.2.10.RELEASE\spring-aop-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-context\5.2.10.RELEASE\spring-context-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-expression\5.2.10.RELEASE\spring-expression-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.3.5.RELEASE\spring-boot-starter-data-jpa-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.3.5.RELEASE\spring-boot-starter-aop-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.3.5.RELEASE\spring-boot-starter-jdbc-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\com\zaxxer\HikariCP\3.4.5\HikariCP-3.4.5.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-jdbc\5.2.10.RELEASE\spring-jdbc-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\rita.a.fernandes\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\hibernate\hibernate-core\5.4.22.Final\hibernate-core-5.4.22.Final.jar;C:\Users\rita.a.fernandes\.m2\repository\org\jboss\logging\jboss-logging\3.4.1.Final\jboss-logging-3.4.1.Final.jar;C:\Users\rita.a.fernandes\.m2\repository\org\javassist\javassist\3.24.0-GA\javassist-3.24.0-GA.jar;C:\Users\rita.a.fernandes\.m2\repository\net\bytebuddy\byte-buddy\1.10.17\byte-buddy-1.10.17.jar;C:\Users\rita.a.fernandes\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\rita.a.fernandes\.m2\repository\org\jboss\jandex\2.1.3.Final\jandex-2.1.3.Final.jar;C:\Users\rita.a.fernandes\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\rita.a.fernandes\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.0.Final\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\rita.a.fernandes\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.3\jaxb-runtime-2.3.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\glassfish\jaxb\txw2\2.3.3\txw2-2.3.3.jar;C:\Users\rita.a.fernandes\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.11\istack-commons-runtime-3.0.11.jar;C:\Users\rita.a.fernandes\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\data\spring-data-jpa\2.3.5.RELEASE\spring-data-jpa-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\data\spring-data-commons\2.3.5.RELEASE\spring-data-commons-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-orm\5.2.10.RELEASE\spring-orm-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-tx\5.2.10.RELEASE\spring-tx-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-aspects\5.2.10.RELEASE\spring-aspects-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\com\sap\cloud\db\jdbc\ngdbc\2.3.48\ngdbc-2.3.48.jar;C:\Users\rita.a.fernandes\.m2\repository\org\modelmapper\modelmapper\2.3.8\modelmapper-2.3.8.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.3.5.RELEASE\spring-boot-starter-test-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-test\2.3.5.RELEASE\spring-boot-test-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.3.5.RELEASE\spring-boot-test-autoconfigure-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\rita.a.fernandes\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\rita.a.fernandes\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\rita.a.fernandes\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\rita.a.fernandes\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\rita.a.fernandes\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\rita.a.fernandes\.m2\repository\org\assertj\assertj-core\3.16.1\assertj-core-3.16.1.jar;C:\Users\rita.a.fernandes\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\rita.a.fernandes\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.3\junit-jupiter-5.6.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.3\junit-jupiter-api-5.6.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.3\junit-jupiter-params-5.6.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.3\junit-jupiter-engine-5.6.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\junit\vintage\junit-vintage-engine\5.6.3\junit-vintage-engine-5.6.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\rita.a.fernandes\.m2\repository\org\junit\platform\junit-platform-engine\1.6.3\junit-platform-engine-1.6.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\rita.a.fernandes\.m2\repository\org\junit\platform\junit-platform-commons\1.6.3\junit-platform-commons-1.6.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\rita.a.fernandes\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.17\byte-buddy-agent-1.10.17.jar;C:\Users\rita.a.fernandes\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\rita.a.fernandes\.m2\repository\org\mockito\mockito-junit-jupiter\3.3.3\mockito-junit-jupiter-3.3.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\rita.a.fernandes\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-core\5.2.10.RELEASE\spring-core-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-jcl\5.2.10.RELEASE\spring-jcl-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-test\5.2.10.RELEASE\spring-test-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\xmlunit\xmlunit-core\2.7.0\xmlunit-core-2.7.0.jar;C:\Users\rita.a.fernandes\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\rita.a.fernandes\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="user.country.format" value="PT"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\RITAA~1.FER\AppData\Local\Temp\surefire866393242164996063\surefirebooter7978389213088892929.jar C:\Users\rita.a.fernandes\AppData\Local\Temp\surefire866393242164996063 2020-11-24T17-14-09_367-jvmRun1 surefire5861676328501129380tmp surefire_03370890969910856531tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\rita.a.fernandes\Desktop\trainingNov2020\target\test-classes;C:\Users\rita.a.fernandes\Desktop\trainingNov2020\target\classes;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.3.5.RELEASE\spring-boot-starter-web-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter\2.3.5.RELEASE\spring-boot-starter-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot\2.3.5.RELEASE\spring-boot-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.3.5.RELEASE\spring-boot-autoconfigure-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.3.5.RELEASE\spring-boot-starter-logging-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\rita.a.fernandes\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\rita.a.fernandes\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\rita.a.fernandes\.m2\repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.3.5.RELEASE\spring-boot-starter-json-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.3\jackson-databind-2.11.3.jar;C:\Users\rita.a.fernandes\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.3\jackson-annotations-2.11.3.jar;C:\Users\rita.a.fernandes\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.3\jackson-core-2.11.3.jar;C:\Users\rita.a.fernandes\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.3\jackson-datatype-jdk8-2.11.3.jar;C:\Users\rita.a.fernandes\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.3\jackson-datatype-jsr310-2.11.3.jar;C:\Users\rita.a.fernandes\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.3\jackson-module-parameter-names-2.11.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.3.5.RELEASE\spring-boot-starter-tomcat-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.39\tomcat-embed-core-9.0.39.jar;C:\Users\rita.a.fernandes\.m2\repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.39\tomcat-embed-websocket-9.0.39.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-web\5.2.10.RELEASE\spring-web-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-beans\5.2.10.RELEASE\spring-beans-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-webmvc\5.2.10.RELEASE\spring-webmvc-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-aop\5.2.10.RELEASE\spring-aop-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-context\5.2.10.RELEASE\spring-context-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-expression\5.2.10.RELEASE\spring-expression-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.3.5.RELEASE\spring-boot-starter-data-jpa-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.3.5.RELEASE\spring-boot-starter-aop-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.3.5.RELEASE\spring-boot-starter-jdbc-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\com\zaxxer\HikariCP\3.4.5\HikariCP-3.4.5.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-jdbc\5.2.10.RELEASE\spring-jdbc-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\rita.a.fernandes\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\hibernate\hibernate-core\5.4.22.Final\hibernate-core-5.4.22.Final.jar;C:\Users\rita.a.fernandes\.m2\repository\org\jboss\logging\jboss-logging\3.4.1.Final\jboss-logging-3.4.1.Final.jar;C:\Users\rita.a.fernandes\.m2\repository\org\javassist\javassist\3.24.0-GA\javassist-3.24.0-GA.jar;C:\Users\rita.a.fernandes\.m2\repository\net\bytebuddy\byte-buddy\1.10.17\byte-buddy-1.10.17.jar;C:\Users\rita.a.fernandes\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\rita.a.fernandes\.m2\repository\org\jboss\jandex\2.1.3.Final\jandex-2.1.3.Final.jar;C:\Users\rita.a.fernandes\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\rita.a.fernandes\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.0.Final\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\rita.a.fernandes\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.3\jaxb-runtime-2.3.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\glassfish\jaxb\txw2\2.3.3\txw2-2.3.3.jar;C:\Users\rita.a.fernandes\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.11\istack-commons-runtime-3.0.11.jar;C:\Users\rita.a.fernandes\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\data\spring-data-jpa\2.3.5.RELEASE\spring-data-jpa-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\data\spring-data-commons\2.3.5.RELEASE\spring-data-commons-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-orm\5.2.10.RELEASE\spring-orm-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-tx\5.2.10.RELEASE\spring-tx-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-aspects\5.2.10.RELEASE\spring-aspects-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\com\sap\cloud\db\jdbc\ngdbc\2.3.48\ngdbc-2.3.48.jar;C:\Users\rita.a.fernandes\.m2\repository\org\modelmapper\modelmapper\2.3.8\modelmapper-2.3.8.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.3.5.RELEASE\spring-boot-starter-test-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-test\2.3.5.RELEASE\spring-boot-test-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.3.5.RELEASE\spring-boot-test-autoconfigure-2.3.5.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\rita.a.fernandes\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\rita.a.fernandes\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\rita.a.fernandes\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\rita.a.fernandes\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\rita.a.fernandes\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\rita.a.fernandes\.m2\repository\org\assertj\assertj-core\3.16.1\assertj-core-3.16.1.jar;C:\Users\rita.a.fernandes\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\rita.a.fernandes\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.3\junit-jupiter-5.6.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.3\junit-jupiter-api-5.6.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.3\junit-jupiter-params-5.6.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.3\junit-jupiter-engine-5.6.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\junit\vintage\junit-vintage-engine\5.6.3\junit-vintage-engine-5.6.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\rita.a.fernandes\.m2\repository\org\junit\platform\junit-platform-engine\1.6.3\junit-platform-engine-1.6.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\rita.a.fernandes\.m2\repository\org\junit\platform\junit-platform-commons\1.6.3\junit-platform-commons-1.6.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\rita.a.fernandes\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.17\byte-buddy-agent-1.10.17.jar;C:\Users\rita.a.fernandes\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\rita.a.fernandes\.m2\repository\org\mockito\mockito-junit-jupiter\3.3.3\mockito-junit-jupiter-3.3.3.jar;C:\Users\rita.a.fernandes\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\rita.a.fernandes\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-core\5.2.10.RELEASE\spring-core-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-jcl\5.2.10.RELEASE\spring-jcl-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\springframework\spring-test\5.2.10.RELEASE\spring-test-5.2.10.RELEASE.jar;C:\Users\rita.a.fernandes\.m2\repository\org\xmlunit\xmlunit-core\2.7.0\xmlunit-core-2.7.0.jar;C:\Users\rita.a.fernandes\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\rita.a.fernandes\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\rita.a.fernandes"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
+    <property name="basedir" value="C:\Users\rita.a.fernandes\Desktop\trainingNov2020"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\RITAA~1.FER\AppData\Local\Temp\surefire866393242164996063\surefirebooter7978389213088892929.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="user.name" value="rita.a.fernandes"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\rita.a.fernandes\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\RITAA~1.FER\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="user.dir" value="C:\Users\rita.a.fernandes\Desktop\trainingNov2020"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="user.language.format" value="pt"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jdk1.8.0_201/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_201/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_201/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_201\bin\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\rita.a.fernandes\Documents\apache-maven-3.6.3\bin\;C:\Users\rita.a.fernandes\AppData\Local\Microsoft\WindowsApps;C:\Users\rita.a.fernandes\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rita.a.fernandes\Downloads\eclipse-jee-neon-3\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="aa_saveProduct" classname="com.accenture.training.controller.ProductsControllerTest" time="0.134">
+    <failure message="Response status expected:&lt;200&gt; but was:&lt;405&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response status expected:<200> but was:<405>
+	at com.accenture.training.controller.ProductsControllerTest.aa_saveProduct(ProductsControllerTest.java:76)
+]]></failure>
+    <system-out><![CDATA[17:14:18.834 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.accenture.training.controller.ProductsControllerTest]
+17:14:18.834 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.accenture.training.controller.ProductsControllerTest]
+17:14:18.834 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.accenture.training.controller.ProductsControllerTest]
+17:14:18.834 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.accenture.training.controller.ProductsControllerTest]
+17:14:18.835 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.accenture.training.controller.ProductsControllerTest]
+17:14:18.836 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.accenture.training.controller.ProductsControllerTest]
+17:14:18.846 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@69f1a286 testClass = ProductsControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7922d892 testClass = ProductsControllerTest, locations = '{}', classes = '{class com.accenture.training.MyApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7adda9cc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5c909414, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@22a637e7, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@29626d54, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@1817d444], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]], class annotated with @DirtiesContext [false] with mode [null].
+17:14:18.849 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.accenture.training.controller.ProductsControllerTest]
+17:14:18.850 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.accenture.training.controller.ProductsControllerTest]
+17:14:18.861 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@69f1a286 testClass = ProductsControllerTest, testInstance = com.accenture.training.controller.ProductsControllerTest@46b61c56, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7922d892 testClass = ProductsControllerTest, locations = '{}', classes = '{class com.accenture.training.MyApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7adda9cc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5c909414, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@22a637e7, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@29626d54, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@1817d444], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]]].
+17:14:18.932 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.5.RELEASE)
+
+2020-11-24 17:14:20.179  INFO 1200 --- [           main] c.a.t.controller.ProductsControllerTest  : Starting ProductsControllerTest on CPX-BCTWOVRIGH5 with PID 1200 (started by rita.a.fernandes in C:\Users\rita.a.fernandes\Desktop\trainingNov2020)
+2020-11-24 17:14:20.182  INFO 1200 --- [           main] c.a.t.controller.ProductsControllerTest  : No active profile set, falling back to default profiles: default
+2020-11-24 17:14:23.139  INFO 1200 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-24 17:14:23.506  INFO 1200 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 300ms. Found 2 JPA repository interfaces.
+2020-11-24 17:14:26.893  INFO 1200 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-11-24 17:14:26.926  INFO 1200 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-24 17:14:26.927  INFO 1200 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-24 17:14:27.298  INFO 1200 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-24 17:14:27.301  INFO 1200 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7058 ms
+2020-11-24 17:14:27.316 TRACE 1200 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Added existing Servlet initializer bean 'dispatcherServletRegistration'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration.class]
+2020-11-24 17:14:27.709 TRACE 1200 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'characterEncodingFilter'; order=-2147483648, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]
+2020-11-24 17:14:27.710 TRACE 1200 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'formContentFilter'; order=-9900, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]
+2020-11-24 17:14:27.710 TRACE 1200 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'requestContextFilter'; order=-105, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]
+2020-11-24 17:14:27.736 DEBUG 1200 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2020-11-24 17:14:27.737 DEBUG 1200 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2020-11-24 17:14:29.092  INFO 1200 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-24 17:14:29.236  INFO 1200 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-24 17:14:32.258  INFO 1200 --- [           main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Method getNetworkTimeout() of Connection is not supported.)
+2020-11-24 17:14:32.317  INFO 1200 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-24 17:14:32.540  INFO 1200 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-24 17:14:32.790  INFO 1200 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-24 17:14:32.980  WARN 1200 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-24 17:14:33.893  INFO 1200 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-24 17:14:34.911 DEBUG 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-11-24 17:14:35.627  INFO 1200 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: com.accenture.training.config.CustomHANAColumnStoreDialect
+2020-11-24 17:14:35.690 TRACE 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.a.t.c.ClientsController:
+	{GET /Clients}: findAll(String)
+	{GET /Clients/find}: findByKeyword(String)
+	{POST /Clients/create_client}: createClient(ClientsDTO)
+	{DELETE /Clients/delete_client/{clientID}}: deleteClient(String)
+	{GET /Clients/{clientID}}: findClientByID(String)
+	{PUT /Clients/update_client/{clientID}}: updateClient(String,ClientsDTO)
+2020-11-24 17:14:35.753 TRACE 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.a.t.c.ProductsController:
+	{GET /Products/{productID}}: findProductByID(String)
+	{POST /Products/create_product}: createProduct(ProductsDTO)
+	{PUT /Products/update_client/{productID}}: updateProduct(String,ProductsDTO)
+	{DELETE /Products/delete_product/{productID}}: deleteProduct(String)
+	{GET /Products}: findAllProducts(String)
+	{GET /Products/find}: findProductByKeyword(String)
+2020-11-24 17:14:35.760 TRACE 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2020-11-24 17:14:35.762 DEBUG 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2020-11-24 17:14:35.955 DEBUG 1200 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2020-11-24 17:14:36.123 TRACE 1200 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020-11-24 17:14:36.124 TRACE 1200 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-11-24 17:14:36.124 DEBUG 1200 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-11-24 17:14:36.198 DEBUG 1200 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-11-24 17:14:38.117  INFO 1200 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57674 (http) with context path ''
+2020-11-24 17:14:38.253  INFO 1200 --- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-24 17:14:40.493  INFO 1200 --- [         task-1] o.hibernate.dialect.AbstractHANADialect  : Changing the query timeout from -1 ms to -1 s, because HANA requires the timeout in seconds
+2020-11-24 17:14:40.494  INFO 1200 --- [         task-1] o.hibernate.dialect.AbstractHANADialect  : Changing the query timeout from -1 ms to -1 s, because HANA requires the timeout in seconds
+2020-11-24 17:14:40.536  INFO 1200 --- [         task-1] o.hibernate.dialect.AbstractHANADialect  : Changing the query timeout from -1 ms to -1 s, because HANA requires the timeout in seconds
+2020-11-24 17:14:40.536  INFO 1200 --- [         task-1] o.hibernate.dialect.AbstractHANADialect  : Changing the query timeout from -1 ms to -1 s, because HANA requires the timeout in seconds
+2020-11-24 17:14:40.557  INFO 1200 --- [         task-1] o.hibernate.dialect.AbstractHANADialect  : Changing the query timeout from -1 ms to -1 s, because HANA requires the timeout in seconds
+2020-11-24 17:14:40.557  INFO 1200 --- [         task-1] o.hibernate.dialect.AbstractHANADialect  : Changing the query timeout from -1 ms to -1 s, because HANA requires the timeout in seconds
+2020-11-24 17:14:40.909  INFO 1200 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-24 17:14:40.938  INFO 1200 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-24 17:14:43.296  INFO 1200 --- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-24 17:14:43.357  INFO 1200 --- [           main] c.a.t.controller.ProductsControllerTest  : Started ProductsControllerTest in 24.421 seconds (JVM running for 29.271)
+2020-11-24 17:14:43.619 TRACE 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.a.t.c.ProductsController:
+	{GET /Products/{productID}}: findProductByID(String)
+	{POST /Products/create_product}: createProduct(ProductsDTO)
+	{PUT /Products/update_client/{productID}}: updateProduct(String,ProductsDTO)
+	{DELETE /Products/delete_product/{productID}}: deleteProduct(String)
+	{GET /Products}: findAllProducts(String)
+	{GET /Products/find}: findProductByKeyword(String)
+2020-11-24 17:14:43.620 DEBUG 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in <unknown>
+2020-11-24 17:14:43.633 DEBUG 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-11-24 17:14:43.641 DEBUG 1200 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-11-24 17:14:43.652  INFO 1200 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-11-24 17:14:43.652  INFO 1200 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-11-24 17:14:43.652  INFO 1200 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-11-24 17:14:44.249  WARN 1200 --- [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /Products
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json", Content-Length:"113"]
+             Body = {"id":null,"name":"Product Test","manufacturer":"MAnufacturerTest","salesPrice":0.0,"basePrice":0.0,"quantity":0}
+    Session Attrs = {}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.HttpRequestMethodNotSupportedException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 405
+    Error message = Request method 'POST' not supported
+          Headers = [Allow:"GET"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="ab_changeProduct" classname="com.accenture.training.controller.ProductsControllerTest" time="0.196">
+    <failure message="Response status expected:&lt;200&gt; but was:&lt;405&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response status expected:<200> but was:<405>
+	at com.accenture.training.controller.ProductsControllerTest.ab_changeProduct(ProductsControllerTest.java:98)
+]]></failure>
+    <system-out><![CDATA[2020-11-24 17:14:44.327 TRACE 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.a.t.c.ProductsController:
+	{GET /Products/{productID}}: findProductByID(String)
+	{POST /Products/create_product}: createProduct(ProductsDTO)
+	{PUT /Products/update_client/{productID}}: updateProduct(String,ProductsDTO)
+	{DELETE /Products/delete_product/{productID}}: deleteProduct(String)
+	{GET /Products}: findAllProducts(String)
+	{GET /Products/find}: findProductByKeyword(String)
+2020-11-24 17:14:44.329 DEBUG 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in <unknown>
+2020-11-24 17:14:44.397 DEBUG 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-11-24 17:14:44.408 DEBUG 1200 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-11-24 17:14:44.409  INFO 1200 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-11-24 17:14:44.409  INFO 1200 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-11-24 17:14:44.409  INFO 1200 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-11-24 17:14:44.414  WARN 1200 --- [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /Products/null
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json", Content-Length:"123"]
+             Body = {"id":null,"name":"Produto Teste Alterado","manufacturer":"MAnufacturerTest","salesPrice":0.0,"basePrice":0.0,"quantity":0}
+    Session Attrs = {}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.HttpRequestMethodNotSupportedException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 405
+    Error message = Request method 'PUT' not supported
+          Headers = [Allow:"GET"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="ac_getAllProducts" classname="com.accenture.training.controller.ProductsControllerTest" time="0.255"/>
+  <testcase name="ad_getOneProduct" classname="com.accenture.training.controller.ProductsControllerTest" time="0.471">
+    <failure message="&#10;Expecting actual not to be empty" type="java.lang.AssertionError">java.lang.AssertionError: 
+
+Expecting actual not to be empty
+	at com.accenture.training.controller.ProductsControllerTest.ad_getOneProduct(ProductsControllerTest.java:137)
+</failure>
+    <system-out><![CDATA[2020-11-24 17:14:45.944 TRACE 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.a.t.c.ProductsController:
+	{GET /Products/{productID}}: findProductByID(String)
+	{POST /Products/create_product}: createProduct(ProductsDTO)
+	{PUT /Products/update_client/{productID}}: updateProduct(String,ProductsDTO)
+	{DELETE /Products/delete_product/{productID}}: deleteProduct(String)
+	{GET /Products}: findAllProducts(String)
+	{GET /Products/find}: findProductByKeyword(String)
+2020-11-24 17:14:45.945 DEBUG 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in <unknown>
+2020-11-24 17:14:45.951 DEBUG 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-11-24 17:14:45.957 DEBUG 1200 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-11-24 17:14:45.958  INFO 1200 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-11-24 17:14:45.959  INFO 1200 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-11-24 17:14:45.959  INFO 1200 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-11-24 17:14:45.963 TRACE 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.accenture.training.controller.ProductsController#findProductByID(String)
+2020-11-24 17:14:45.988 TRACE 1200 --- [           main] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [null]
+2020-11-24 17:14:46.362 DEBUG 1200 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2020-11-24 17:14:46.363 DEBUG 1200 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /Products/null
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.accenture.training.controller.ProductsController
+           Method = com.accenture.training.controller.ProductsController#findProductByID(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="az_deleteProduct" classname="com.accenture.training.controller.ProductsControllerTest" time="0.071">
+    <failure message="Response status expected:&lt;200&gt; but was:&lt;405&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response status expected:<200> but was:<405>
+	at com.accenture.training.controller.ProductsControllerTest.az_deleteProduct(ProductsControllerTest.java:149)
+]]></failure>
+    <system-out><![CDATA[2020-11-24 17:14:46.387 TRACE 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.a.t.c.ProductsController:
+	{GET /Products/{productID}}: findProductByID(String)
+	{POST /Products/create_product}: createProduct(ProductsDTO)
+	{PUT /Products/update_client/{productID}}: updateProduct(String,ProductsDTO)
+	{DELETE /Products/delete_product/{productID}}: deleteProduct(String)
+	{GET /Products}: findAllProducts(String)
+	{GET /Products/find}: findProductByKeyword(String)
+2020-11-24 17:14:46.388 DEBUG 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in <unknown>
+2020-11-24 17:14:46.396 DEBUG 1200 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-11-24 17:14:46.421 DEBUG 1200 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-11-24 17:14:46.421  INFO 1200 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-11-24 17:14:46.422  INFO 1200 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-11-24 17:14:46.423  INFO 1200 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-11-24 17:14:46.430  WARN 1200 --- [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /Products/null
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.HttpRequestMethodNotSupportedException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 405
+    Error message = Request method 'DELETE' not supported
+          Headers = [Allow:"GET"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,16 @@
+com\accenture\training\config\SpringConfig.class
+com\accenture\training\dto\ClientsDTO.class
+com\accenture\training\MyApplication.class
+com\accenture\training\repository\ClientsRepository.class
+com\accenture\training\domain\UserEntity.class
+com\accenture\training\service\ProductsService.class
+com\accenture\training\controller\UsersController.class
+com\accenture\training\service\ClientsService.class
+com\accenture\training\repository\ProductsRepository.class
+com\accenture\training\controller\ProductsController.class
+com\accenture\training\controller\ClientsController.class
+com\accenture\training\dto\ProductsDTO.class
+com\accenture\training\domain\ProductsEntity.class
+com\accenture\training\config\CustomHANAColumnStoreDialect.class
+com\accenture\training\dto\UserDTO.class
+com\accenture\training\domain\ClientsEntity.class

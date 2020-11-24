@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.accenture.training.controller.ProductsControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 22.589 s <<< FAILURE! - in com.accenture.training.controller.ProductsControllerTest
+aa_saveProduct  Time elapsed: 0.134 s  <<< FAILURE!
+java.lang.AssertionError: Response status expected:<200> but was:<405>
+	at com.accenture.training.controller.ProductsControllerTest.aa_saveProduct(ProductsControllerTest.java:76)
+
+ab_changeProduct  Time elapsed: 0.196 s  <<< FAILURE!
+java.lang.AssertionError: Response status expected:<200> but was:<405>
+	at com.accenture.training.controller.ProductsControllerTest.ab_changeProduct(ProductsControllerTest.java:98)
+
+ad_getOneProduct  Time elapsed: 0.471 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual not to be empty
+	at com.accenture.training.controller.ProductsControllerTest.ad_getOneProduct(ProductsControllerTest.java:137)
+
+az_deleteProduct  Time elapsed: 0.071 s  <<< FAILURE!
+java.lang.AssertionError: Response status expected:<200> but was:<405>
+	at com.accenture.training.controller.ProductsControllerTest.az_deleteProduct(ProductsControllerTest.java:149)
+

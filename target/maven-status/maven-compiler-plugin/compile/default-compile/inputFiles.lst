@@ -1,0 +1,16 @@
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\dto\ClientsDTO.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\domain\ClientsEntity.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\dto\UserDTO.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\MyApplication.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\config\CustomHANAColumnStoreDialect.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\config\SpringConfig.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\repository\ClientsRepository.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\domain\UserEntity.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\service\ClientsService.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\dto\ProductsDTO.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\controller\UsersController.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\controller\ClientsController.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\controller\ProductsController.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\service\ProductsService.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\repository\ProductsRepository.java
+C:\Users\rita.a.fernandes\Desktop\trainingNov2020\src\main\java\com\accenture\training\domain\ProductsEntity.java

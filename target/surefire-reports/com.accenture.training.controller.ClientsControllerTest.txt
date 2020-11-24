@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.accenture.training.controller.ClientsControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.202 s <<< FAILURE! - in com.accenture.training.controller.ClientsControllerTest
+aa_saveClient  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.accenture.training.controller.ClientsControllerTest.setUpBefore(ClientsControllerTest.java:53)
+
+ab_changeClient  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.accenture.training.controller.ClientsControllerTest.setUpBefore(ClientsControllerTest.java:53)
+
+az_deleteClient  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.accenture.training.controller.ClientsControllerTest.setUpBefore(ClientsControllerTest.java:53)
+
+ad_getOneClient  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.accenture.training.controller.ClientsControllerTest.setUpBefore(ClientsControllerTest.java:53)
+
+ac_getAllClients  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.accenture.training.controller.ClientsControllerTest.setUpBefore(ClientsControllerTest.java:53)
+
