@@ -2,6 +2,7 @@ package com.accenture.training.domain;
 
 import java.sql.Date;
 import java.sql.Time;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -37,10 +38,10 @@ public class ProductsEntity {
 	private int quantity;
 	
 	@Column(name = "\"VALIDFROM\"")
-	private Date validFrom;
+	private LocalDateTime validFrom;
 	
 	@Column(name = "\"VALIDTO\"")
-	private Date validTo;
+	private LocalDateTime validTo;
 	
 	@Column(name = "\"CREATEDBY\"")
 	private String createdBy;
@@ -90,16 +91,17 @@ public class ProductsEntity {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
-	public Date getValidFrom() {
+	
+	public LocalDateTime getValidFrom() {
 		return validFrom;
 	}
-	public void setValidFrom(Date validFrom) {
+	public void setValidFrom(LocalDateTime validFrom) {
 		this.validFrom = validFrom;
 	}
-	public Date getValidTo() {
+	public LocalDateTime getValidTo() {
 		return validTo;
 	}
-	public void setValidTo(Date validTo) {
+	public void setValidTo(LocalDateTime validTo) {
 		this.validTo = validTo;
 	}
 	public String getCreatedBy() {

@@ -10,6 +10,8 @@ public class ProductsDTO {
 	private double salesPrice;
 	private double basePrice;
 	private int quantity;
+	private String validFrom;
+	private String validTo;
 	private String createdBy;
 	private Time createdAt;
 	private String modifiedBy;
@@ -47,6 +49,19 @@ public class ProductsDTO {
 	}
 	public int getQuantity() {
 		return quantity;
+	}
+	
+	public String getValidFrom() {
+		return validFrom;
+	}
+	public void setValidFrom(String validFrom) {
+		this.validFrom = validFrom;
+	}
+	public String getValidTo() {
+		return validTo;
+	}
+	public void setValidTo(String validTo) {
+		this.validTo = validTo;
 	}
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
