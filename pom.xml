@@ -26,12 +26,23 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>com.sap.cloud.db.jdbc</groupId>
 			<artifactId>ngdbc</artifactId>
 			<version>2.3.48</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.modelmapper</groupId>
 			<artifactId>modelmapper</artifactId>
@@ -47,7 +58,6 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
 
 	<build>
@@ -61,6 +71,24 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.19.1</version>
 			</plugin>
+			<!--scans for vulnerabilities -->
+			<!-- 
+			<plugin>
+				<groupId>org.owasp</groupId> 
+				<artifactId>dependency-check-maven</artifactId>
+				<version>5.3.2</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<skipProvidedScope>true</skipProvidedScope>
+				</configuration>
+			</plugin>
+			 -->
 		</plugins>
 	</build>
 

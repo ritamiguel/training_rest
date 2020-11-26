@@ -6,6 +6,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -29,6 +30,9 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import com.accenture.training.MyApplication;
 import com.accenture.training.dto.ClientsDTO;
+import com.accenture.training.dto.ProductsDTO;
+import com.accenture.training.dto.SalesOrderDTO;
+import com.accenture.training.dto.SalesOrderItemDTO;
 import com.accenture.training.dto.UserDTO;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -37,20 +41,54 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @ContextConfiguration(classes = MyApplication.class)
 @RunWith(SpringJUnit4ClassRunner.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class UsersControllerTest {
+public class SalesOrderControllerTest {
 
 	@Autowired
-	private UsersController controller;
+	private SalesOrderController controller;
 
 	// Mock testing variables
 	private static MockMvc mockMvc;
 	private static ObjectMapper mapper;
-	private static UserDTO user;
+	private static SalesOrderDTO salesOrder;
 
 	private static void getProductTest() {
+		ClientsDTO clientsDTO = new ClientsDTO();
+		clientsDTO.setName("client Test");
+		clientsDTO.setAge(22);
+		clientsDTO.setId("1");
+		clientsDTO.setFamilyName("Fernandes");
+		
 		UserDTO userDTO = new UserDTO();
-		userDTO.setName("User Test");
-		user = userDTO;
+		userDTO.setName("user Test");
+		userDTO.setId("1");
+		
+		ProductsDTO productsDTO = new ProductsDTO();
+		productsDTO.setName("Smartphone");
+		productsDTO.setQuantity(24);
+		productsDTO.setSalesPrice(1265);
+		productsDTO.setBasePrice(2345);
+		productsDTO.setManufacturer("Samsung");
+		productsDTO.setId("42bed363-bbfb-4e92-a7ff-bdf0b1275bbe");
+		
+		SalesOrderItemDTO so_items = new SalesOrderItemDTO();
+		so_items.setProducts(productsDTO);
+		so_items.setSalesOrder("1");
+		so_items.setStatus("C");
+		so_items.setId("2");
+		
+		
+		List<SalesOrderItemDTO> salesOrderItemDTOs = new ArrayList<SalesOrderItemDTO>();
+		salesOrderItemDTOs.add(so_items);
+		
+		SalesOrderDTO salesOrderDTO = new SalesOrderDTO();
+		salesOrderDTO.setItems(salesOrderItemDTOs);
+		salesOrderDTO.setUserID(userDTO);
+		salesOrderDTO.setClientID(clientsDTO);
+		salesOrderDTO.setStatus("C");
+		salesOrderDTO.setId("1");
+		
+		
+		salesOrder = salesOrderDTO;
 	}
 
 	@BeforeClass
@@ -65,12 +103,12 @@ public class UsersControllerTest {
 	}
 	
 	@Test
-	public void aa_saveUser() throws UnsupportedEncodingException, Exception {
-		final byte[] userAsByteArray = mapper.writeValueAsBytes(user);
+	public void aa_saveSalesOrder() throws UnsupportedEncodingException, Exception {
+		final byte[] salesOrderAsByteArray = mapper.writeValueAsBytes(salesOrder);
 
-		final MockHttpServletRequestBuilder request = MockMvcRequestBuilders.post("/Users")
+		final MockHttpServletRequestBuilder request = MockMvcRequestBuilders.post("/SalesOrder")
 				.characterEncoding(StandardCharsets.UTF_8.name()).contentType(MediaType.APPLICATION_JSON)
-				.accept(MediaType.APPLICATION_JSON).content(userAsByteArray);
+				.accept(MediaType.APPLICATION_JSON).content(salesOrderAsByteArray);
 
 		final String result = mockMvc.perform(request).andDo(print()).andExpect(status().is(HttpStatus.OK.value()))
 				.andReturn().getResponse().getContentAsString();
@@ -78,22 +116,22 @@ public class UsersControllerTest {
 		assertThat(result).isNotNull();
 		assertThat(result).isNotEmpty();
 
-		final UserDTO objResult = mapper.readValue(result, UserDTO.class);
+		final SalesOrderDTO objResult = mapper.readValue(result, SalesOrderDTO.class);
 
 		assertThat(objResult.getId()).isNotEmpty();
-		user.setId(objResult.getId());
+		salesOrder.setId(objResult.getId());
 	}
 	
 	@Test
-	public void ab_changeUser() throws UnsupportedEncodingException, Exception {
-		String newName = "User Teste Alterado";
-		user.setName(newName);
+	public void ab_changeSalesOrder() throws UnsupportedEncodingException, Exception {
+		String newStatus = "D";
+		salesOrder.setStatus(newStatus);
 		
-		final byte[] userAsByteArray = mapper.writeValueAsBytes(user);
+		final byte[] salesOrdeAsByteArray = mapper.writeValueAsBytes(salesOrder);
 
-		final MockHttpServletRequestBuilder request = MockMvcRequestBuilders.put("/Users/"+user.getId())
+		final MockHttpServletRequestBuilder request = MockMvcRequestBuilders.put("/SalesOrder/"+salesOrder.getId())
 				.characterEncoding(StandardCharsets.UTF_8.name()).contentType(MediaType.APPLICATION_JSON)
-				.accept(MediaType.APPLICATION_JSON).content(userAsByteArray);
+				.accept(MediaType.APPLICATION_JSON).content(salesOrdeAsByteArray);
 
 		final String result = mockMvc.perform(request).andDo(print()).andExpect(status().is(HttpStatus.OK.value()))
 				.andReturn().getResponse().getContentAsString();
@@ -101,15 +139,15 @@ public class UsersControllerTest {
 		assertThat(result).isNotNull();
 		assertThat(result).isNotEmpty();
 
-		final ClientsDTO objResult = mapper.readValue(result, ClientsDTO.class);
+		final SalesOrderDTO objResult = mapper.readValue(result, SalesOrderDTO.class);
 
-		assertThat(objResult.getId()).isEqualTo(user.getId());
-		assertThat(objResult.getName()).isEqualTo(newName);
+		assertThat(objResult.getId()).isEqualTo(salesOrder.getId());
+		assertThat(objResult.getStatus()).isEqualTo(newStatus);
 	}
 	
 	@Test
-	public void ac_getAllUsers() throws UnsupportedEncodingException, Exception {
-		final MockHttpServletRequestBuilder request = MockMvcRequestBuilders.get("/Users")
+	public void ac_getAllSalesOrder() throws UnsupportedEncodingException, Exception {
+		final MockHttpServletRequestBuilder request = MockMvcRequestBuilders.get("/SalesOrder")
 				.characterEncoding(StandardCharsets.UTF_8.name()).contentType(MediaType.APPLICATION_JSON)
 				.accept(MediaType.APPLICATION_JSON);
 
@@ -119,13 +157,13 @@ public class UsersControllerTest {
 		assertThat(result).isNotNull();
 		assertThat(result).isNotEmpty();
 
-		final List<UserDTO> objResult = Arrays.asList(mapper.readValue(result, UserDTO[].class));
+		final List<SalesOrderDTO> objResult = Arrays.asList(mapper.readValue(result, SalesOrderDTO[].class));
 		assertThat(objResult.size()).isGreaterThan(0);
 	}
 	
 	@Test
-	public void ad_getOneUser() throws UnsupportedEncodingException, Exception {
-		final MockHttpServletRequestBuilder request = MockMvcRequestBuilders.get("/Users/"+user.getId())
+	public void ad_getOneSale() throws UnsupportedEncodingException, Exception {
+		final MockHttpServletRequestBuilder request = MockMvcRequestBuilders.get("/SalesOrder/"+salesOrder.getId())
 				.characterEncoding(StandardCharsets.UTF_8.name()).contentType(MediaType.APPLICATION_JSON)
 				.accept(MediaType.APPLICATION_JSON);
 
@@ -135,13 +173,16 @@ public class UsersControllerTest {
 		assertThat(result).isNotNull();
 		assertThat(result).isNotEmpty();
 
-		final UserDTO objResult = mapper.readValue(result, UserDTO.class);
-		assertThat(objResult.getId()).isEqualTo(user.getId());
+		final SalesOrderDTO objResult = mapper.readValue(result, SalesOrderDTO.class);
+		assertThat(objResult.getId()).isEqualTo(salesOrder.getId());
+		
+		assertThat(objResult.getItems().size()).isGreaterThan(0);
+		assertThat(objResult.getItems().get(0).getProducts().equals("Samsung"));
 	}
 	
 	@Test
-	public void az_deleteUser() throws UnsupportedEncodingException, Exception {
-		final MockHttpServletRequestBuilder request = MockMvcRequestBuilders.delete("/Users/"+user.getId())
+	public void az_deleteSalesOrder() throws UnsupportedEncodingException, Exception {
+		final MockHttpServletRequestBuilder request = MockMvcRequestBuilders.delete("/SalesOrder/"+salesOrder.getId())
 				.characterEncoding(StandardCharsets.UTF_8.name()).contentType(MediaType.APPLICATION_JSON)
 				.accept(MediaType.APPLICATION_JSON);
 

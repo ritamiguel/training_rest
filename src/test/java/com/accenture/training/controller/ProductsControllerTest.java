@@ -49,8 +49,12 @@ public class ProductsControllerTest {
 
 	private static void getProductTest() {
 		ProductsDTO ProductsDTO = new ProductsDTO();
+		ProductsDTO.setId("1");
 		ProductsDTO.setName("Product Test");
 		ProductsDTO.setManufacturer("MAnufacturerTest");
+		ProductsDTO.setSalesPrice(12.0);
+		ProductsDTO.setBasePrice(12.0);
+		ProductsDTO.setQuantity(52);
 		product = ProductsDTO;
 	}
 

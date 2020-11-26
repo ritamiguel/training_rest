@@ -50,7 +50,7 @@ public class ClientsControllerTest {
 		ClientsDTO clientsDTO = new ClientsDTO();
 		clientsDTO.setName("Client Test");
 		clientsDTO.setAge(20);
-		clientsDTO.setFamilyName("Fernandes");
+		clientsDTO.setFamilyName("FamilyNameTest");
 		client = clientsDTO;
 	}
 

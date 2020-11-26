@@ -2,8 +2,6 @@ package com.accenture.training.dto;
 
 import java.sql.Time;
 
-import javax.persistence.Column;
-
 public class ClientsDTO {
 	
 	private String id;

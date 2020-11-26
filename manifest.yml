@@ -1,0 +1,9 @@
+applications:
+- name: trainingNov2020
+  instances: 1
+  memory: 896M
+  routes:
+    - route: trainingNov2020-a59504f4trial-training-dev.cfapps.eu10.hana.ondemand.com
+  path: target\trainingNov2020-0.0.1-SNAPSHOT.jar
+  services:
+    - xsuaa-basic
